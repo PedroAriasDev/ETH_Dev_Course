@@ -1,0 +1,203 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "descripcion",
+								"type": "string"
+							},
+							{
+								"internalType": "bool",
+								"name": "completado",
+								"type": "bool"
+							},
+							{
+								"internalType": "uint256",
+								"name": "timestamp",
+								"type": "uint256"
+							}
+						],
+						"indexed": false,
+						"internalType": "struct ToDoList.Tarea",
+						"name": "tarea",
+						"type": "tuple"
+					}
+				],
+				"name": "ToDoList_TareaAgregada",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "descripcion",
+								"type": "string"
+							},
+							{
+								"internalType": "bool",
+								"name": "completado",
+								"type": "bool"
+							},
+							{
+								"internalType": "uint256",
+								"name": "timestamp",
+								"type": "uint256"
+							}
+						],
+						"indexed": false,
+						"internalType": "struct ToDoList.Tarea",
+						"name": "tarea",
+						"type": "tuple"
+					}
+				],
+				"name": "ToDoList_TareaCompletada",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "descripcion",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					}
+				],
+				"name": "ToDoList_TareaEliminada",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_descripcion",
+						"type": "string"
+					}
+				],
+				"name": "agregarTarea",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "completarTarea",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_descripcion",
+						"type": "string"
+					}
+				],
+				"name": "eliminarTarea",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "obtenerTarea",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "descripcion",
+								"type": "string"
+							},
+							{
+								"internalType": "bool",
+								"name": "completado",
+								"type": "bool"
+							},
+							{
+								"internalType": "uint256",
+								"name": "timestamp",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct ToDoList.Tarea",
+						"name": "_tarea",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "i3arba - 77 Innovation Labs",
+			"kind": "dev",
+			"methods": {},
+			"title": "Contrato ToDoList",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "Contrato para organizar tareas",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Contratos/ToDoList.sol": "ToDoList"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Contratos/ToDoList.sol": {
+			"keccak256": "0x6bd96fcdf0349b0d79bd4ab39560f7b19c42fc201909e8f59c1b1a4d3e202298",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://90055662bb54b24d4dbb2282f6fba420ffbd13de6f2c1eeacba44a463bedca93",
+				"dweb:/ipfs/QmdXB48x5b1X1kDQ66ogfQuSKxUhhtuP5BNDmfZNc2sphx"
+			]
+		}
+	},
+	"version": 1
+}
